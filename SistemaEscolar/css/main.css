@@ -45,6 +45,10 @@ body, html{
 	font-family: 'RobotoCondensed';
 	overflow: hidden;
 }
+a{
+	color: rgb(92, 89, 89);
+	text-decoration: underline;
+}
 .full-box{
 	margin: 0;
 	padding: 0;
