@@ -56,6 +56,9 @@
 							<a href="section.html"><i class="zmdi zmdi-graduation-cap zmdi-hc-fw"></i> Cursos</a>
 						</li>
 						<li>
+							<a href="building.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Edificios</a>
+						</li>
+						<li>
 							<a href="salon.html"><i class="zmdi zmdi-font zmdi-hc-fw"></i> Aulas</a>
 						</li>
 					</ul>
@@ -67,6 +70,9 @@
 					<ul class="list-unstyled full-box">
 						<li>
 							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administrador</a>
+						</li>
+						<li>
+							<a href="applicant.html"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Aspirante</a>
 						</li>
 						<li>
 							<a href="teacher.html"><i class="zmdi zmdi-male-alt zmdi-hc-fw"></i> Docente</a>
@@ -177,6 +183,16 @@
 											  <label class="control-label">Capacidad</label>
 											  <input class="form-control" type="text">
 											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Edificio</label>
+												<input list ="level" name="level" class="form-control" >
+												<datalist id="level">
+													<option value="Eloy Alfaro">
+													<option value="Garcia Moreno">
+													<option value="Simon Bolivar">
+													<option value="Mariscal Sucre">
+												  </datalist>
+											</div>
 											<div class="form-group">
 										      <label class="control-label">Estado</label>
 										        <select class="form-control">
@@ -201,6 +217,7 @@
 											<th class="text-center">Código</th>
 											<th class="text-center">Nombre</th>
 											<th class="text-center">Capacidad</th>
+											<th class="text-center">Edificio</th>
 											<th class="text-center">Estado</th>
 											<th class="text-center">Actualizar</th>
 											<th class="text-center">Borrar</th>
@@ -212,6 +229,7 @@
 											<td>001</td>
 											<td>Aula 1</td>
 											<td>40</td>
+											<td>Eloy Alfaro</td>
 											<td>Activo</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
@@ -221,6 +239,7 @@
 											<td>002</td>
 											<td>Aula 2</td>
 											<td>30</td>
+											<td>Garcia Moreno</td>
 											<td>Activo</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
@@ -230,6 +249,7 @@
 											<td>003</td>
 											<td>Aula 3</td>
 											<td>50</td>
+											<td>Simon Bolivar</td>
 											<td>Activo</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
