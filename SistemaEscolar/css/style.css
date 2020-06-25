@@ -465,3 +465,36 @@ video{
         width: 40%;
     } 
 }
+
+.movimiento{
+    margin: auto;
+    overflow: hidden;
+}
+.movimiento ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: cambio 20s infinite;
+}
+.movimiento li{
+    width: 100%;
+    list-style: none;
+}
+.movimiento img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
