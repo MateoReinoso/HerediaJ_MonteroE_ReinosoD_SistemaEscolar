@@ -465,6 +465,9 @@ video{
         width: 40%;
     } 
 }
+.unidad{
+    text-align: unset;
+}
 
 .movimiento{
     margin: auto;
