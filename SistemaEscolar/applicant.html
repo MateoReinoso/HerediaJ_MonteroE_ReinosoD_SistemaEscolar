@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Asignaturas</title>
+	<title>Aspirante</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -19,7 +19,7 @@
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
 					<img src="./assets/img/avatar.jpg" alt="UserIcon">
-					<figcaption class="text-center text-titles">Nombre de Usuario</figcaption>
+					<figcaption class="text-center text-titles">Nombre de Usuario</figcaption><!---Aqui se especificara via codigo el susuario-->>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					<li>
@@ -106,6 +106,7 @@
 		</div>
 	</section>
 
+
 	<!-- Content page-->
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
@@ -135,7 +136,7 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Administración <small>Asignaturas</small></h1>
+			  <h1 class="text-titles"><i class="zmdi zmdi-male-alt zmdi-hc-fw"></i> Usuarios <small>Aspirantes</small></h1>
 			</div>
 			<p class="lead">Descripción.</p>
 		</div>
@@ -144,7 +145,7 @@
 				<div class="col-xs-12">
 					<ul class="nav nav-tabs" style="margin-bottom: 15px;">
 					  	<li class="active"><a href="#new" data-toggle="tab">Nuevo</a></li>
-					  	<li><a href="#list" data-toggle="tab">Lista</a></li>
+					  	<li><a href="#list" data-toggle="tab">List</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade active in" id="new">
@@ -153,40 +154,43 @@
 									<div class="col-xs-12 col-md-10 col-md-offset-1">
 									    <form action="">
 									    	<div class="form-group label-floating">
-											  <label class="control-label">Código</label>
-											  <input class="form-control" type="text">
-											</div>
-									    	<div class="form-group label-floating">
 											  <label class="control-label">Nombre</label>
 											  <input class="form-control" type="text">
 											</div>
 											<div class="form-group label-floating">
-												<label class="control-label">Periodo</label>
-												<input list ="periods" name="periods" class="form-control" >
-												<datalist id="periods">
-													<option value="2010-2011">
-													<option value="2011-2012">
-													<option value="2012-2013">
-													<option value="2013-2014">
-													<option value="2015-2016">
-												  </datalist>
+											  <label class="control-label">Apellido</label>
+											  <input class="form-control" type="text">
 											</div>
 											<div class="form-group label-floating">
-												<label class="control-label">Nivel de Educacion</label>
-												<input list ="level" name="level" class="form-control" >
-												<datalist id="level">
-													<option value="Educación básica">
-													<option value="Primer año de Bachillerato">
-													<option value="Segundo año de Bachillerato">
-													<option value="Tercer año de Bachillerato">
-												  </datalist>
+                                                <label class="control-label">Cedula</label>
+                                                <input class="form-control" type="number">
+                                              </div>
+											<div class="form-group label-floating">
+											  <label class="control-label">Email</label>
+											  <input class="form-control" type="text">
+											</div>
+											<div class="form-group label-floating">
+											  <label class="control-label">Teléfono</label>
+											  <input class="form-control" type="text">
+											</div>
+											
+											<div class="form-group">
+											  <label class="control-label">Fecha de Nacimiento</label>
+											  <input class="form-control" type="date">
 											</div>
 											<div class="form-group">
-										      <label class="control-label">Estado</label>
+										        <label class="control-label">Género</label>
 										        <select class="form-control">
-										          <option>Activo</option>
-										          <option>Desactivar</option>
+										          <option>Masculino</option>
+										          <option>Femenino</option>
 										        </select>
+										    </div>
+											<div class="form-group">
+										      <label class="control-label">Foto</label>
+										      <div>
+										        <input type="text" readonly="" class="form-control" placeholder="Buscar...">
+										        <input type="file" >
+										      </div>
 										    </div>
 										    <p class="text-center">
 										    	<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
@@ -202,11 +206,14 @@
 									<thead>
 										<tr>
 											<th class="text-center">#</th>
-											<th class="text-center">Código</th>
 											<th class="text-center">Nombre</th>
-											<th class="text-center">Estado</th>
-											<th class="text-center">Periodo</th>
-											<th class="text-center">Nivel</th>
+											<th class="text-center">Apellido</th>
+											<th class="text-center">Cedula</th>
+											<th class="text-center">Email</th>
+											<th class="text-center">Teléfono</th>
+											<th class="text-center">Fecha de Nacimiento</th>
+                                            <th class="text-center">Género</th>
+                                            <th class="text-center">Estado</th>
 											<th class="text-center">Actualizar</th>
 											<th class="text-center">Borrar</th>
 										</tr>
@@ -214,41 +221,53 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>100</td>
-											<td>Mathematics</td>
-											<td>Active</td>
-											<td>2011-2012</td>
-											<td>Tercer año de Bachillerato</td>
+											<td>Carlos</td>
+											<td>Alfaro</td>
+											<td>1719113258</td>
+											<td>carlos@gmail.com</td>
+											<td>+593992858784</td>
+											<td>07/03/1997</td>
+											<td>Masculino</td>
+											<td>Aprobado</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>2</td>
-											<td>500</td>
-											<td>Science</td>
-											<td>Active</td>
-											<td>2011-2012</td>
-											<td>Segundo año de Bachillerato</td>
+											<td>Alicia</td>
+											<td>Melendez</td>
+											<td>1719113241</td>
+											<td>alicia@gmail.com</td>
+											<td>+593992453704</td>
+											<td>23/07/1997</td>
+											<td>Femenino</td>
+											<td>Pendiente</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>3</td>
-											<td>300</td>
-											<td>Social</td>
-											<td>Active</td>
-											<td>2011-2012</td>
-											<td>Primer año de Bachillerato</td>
+											<td>Sarai</td>
+											<td>Lopez</td>
+											<td>1719132132</td>
+											<td>sarai@gmail.com</td>
+											<td>+593991453184</td>
+											<td>10/09/1991</td>
+											<td>Femenino</td>
+											<td>Aprobado</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>4</td>
-											<td>700</td>
-											<td>English</td>
-											<td>Active</td>
-											<td>2011-2012</td>
-											<td>Educación básica</td>
+											<td>Alba</td>
+											<td>Bonilla</td>
+											<td>1721784591</td>
+											<td>alba@gmail.com</td>
+											<td>++593991154724</td>
+											<td>19/04/1993</td>
+											<td>Femenino</td>
+											<td>No aprobado</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
@@ -338,7 +357,7 @@
 			    <div class="modal-body">
 			        <p>
 						Descripción.
-					</p>
+			        </p>
 			    </div>
 		      	<div class="modal-footer">
 		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Aceptar</button>
