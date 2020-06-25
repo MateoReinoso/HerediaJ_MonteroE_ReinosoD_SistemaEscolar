@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Inicio</title>
+	<title>Tareas</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -148,119 +148,132 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">Sistema <small>Opciones</small></h1>
+			  <h1 class="text-titles"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Escolar <small>Tareas</small></h1>
 			</div>
-		</div>
-		<div class="full-box text-center" style="padding: 30px 10px;">
-			<article class="full-box tile">
-				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Administradores
-				</div>
-				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-account"></i>
-				</div>
-				<div class="full-box tile-number text-titles">
-					<p class="full-box">7</p>
-					<small>Registrar</small>
-				</div>
-			</article>
-			<article class="full-box tile">
-				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Docentes
-				</div>
-				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-male-alt"></i>
-				</div>
-				<div class="full-box tile-number text-titles">
-					<p class="full-box">10</p>
-					<small>Registrar</small>
-				</div>
-			</article>
-			<article class="full-box tile">
-				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Estudiantes
-				</div>
-				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-face"></i>
-				</div>
-				<div class="full-box tile-number text-titles">
-					<p class="full-box">70</p>
-					<small>Registrar</small>
-				</div>
-			</article>
-			<article class="full-box tile">
-				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Representantes
-				</div>
-				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-male-female"></i>
-				</div>
-				<div class="full-box tile-number text-titles">
-					<p class="full-box">70</p>
-					<small>Registrar</small>
-				</div>
-			</article>
+			<p class="lead">Descripción.</p>
 		</div>
 		<div class="container-fluid">
-			<div class="page-header">
-			  <h1 class="text-titles">Sistema <small>Línea de Tiempo</small></h1>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+					  	<li class="active"><a href="#new" data-toggle="tab">Nuevo</a></li>
+					  	<li><a href="#list" data-toggle="tab">Lista</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="new">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-md-offset-1">
+									    <form action="">
+									    	<div class="form-group label-floating">
+											  <label class="control-label">Código</label>
+											  <input class="form-control" type="text">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Asignatura</label>
+												<select class="form-control">
+													<option>Matemáticas</option>
+													<option>Lenguaje</option>
+													<option>Ciencias Naturales</option>
+													<option>Ciencias Sociales</option>
+													<option>Inglés</option>
+												  </select>
+											</div>
+									    	<div class="form-group label-floating">
+											  <label class="control-label">Nombre de la tarea</label>
+											  <input class="form-control" type="text">
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Descripción de la tarea</label>
+												<input class="form-control" type="text">
+											  </div>
+											<div class="form-group">
+										      <label class="control-label">Estado</label>
+										        <select class="form-control">
+										          <option>Activo</option>
+										          <option>Terminado</option>
+										        </select>
+										    </div>
+										    <p class="text-center">
+										    	<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
+										    </p>
+									    </form>
+									</div>
+								</div>
+							</div>
+						</div>
+					  	<div class="tab-pane fade" id="list">
+							<div class="table-responsive">
+								<table class="table table-hover text-center">
+									<thead>
+										<tr>
+											<th class="text-center">#</th>
+											<th class="text-center">Código</th>
+											<th class="text-center">Asignatura</th>
+											<th class="text-center">Nombre de la tarea</th>
+											<th class="text-center">Descripción de la tarea</th>
+											<th class="text-center">Estado</th>
+											<th class="text-center">Actualizar</th>
+											<th class="text-center">Borrar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>100</td>
+											<td>Mathematicas</td>
+											<td>Tabla del 3</td>
+											<td>Repasar la tabla del 3</td>
+											<td>Activo</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
+											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>500</td>
+											<td>Ciencias Naturales</td>
+											<td>Mundo animal</td>
+											<td>Realizar un reporte sobre el reino fungi</td>
+											<td>Terminado</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
+											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>300</td>
+											<td>Ciencias Sociales</td>
+											<td>Mapa del Ecuador</td>
+											<td>Dibujar el mapa del Ecuador</td>
+											<td>Activo</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
+											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>700</td>
+											<td>Inglés</td>
+											<td>Grammar</td>
+											<td>Repasar condicional if</td>
+											<td>Activo</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
+											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
+										</tr>
+									</tbody>
+								</table>
+								<ul class="pagination pagination-sm">
+								  	<li class="disabled"><a href="#!">«</a></li>
+								  	<li class="active"><a href="#!">1</a></li>
+								  	<li><a href="#!">2</a></li>
+								  	<li><a href="#!">3</a></li>
+								  	<li><a href="#!">4</a></li>
+								  	<li><a href="#!">5</a></li>
+								  	<li><a href="#!">»</a></li>
+								</ul>
+							</div>
+					  	</div>
+					</div>
+				</div>
 			</div>
-			<section id="cd-timeline" class="cd-container">
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="./assets/img/avatar.jpg" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">1 - Nombre (Administrador)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Empieza: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> Termina: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2020</span>
-                    </div>
-                </div>  
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="./assets/img/avatar.jpg" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">2 - Nombre (Docente)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Empieza: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> Termina: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2020</span>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="./assets/img/avatar.jpg" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">3 - Nombre (Estudiante)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Empieza: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> Termina: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2020</span>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="./assets/img/avatar.jpg" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">4 - Nombre (Personal Ad.)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Empieza: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> Termina: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2020</span>
-                    </div>
-                </div>   
-            </section>
-
-
 		</div>
 	</section>
 
@@ -269,7 +282,7 @@
 		<div class="full-box Notifications-bg btn-Notifications-area"></div>
 		<div class="full-box Notifications-body">
 			<div class="Notifications-body-title text-titles text-center">
-				Notificaciones <i class="zmdi zmdi-close btn-Notifications-area"></i>
+				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
 			</div>
 			<div class="list-group">
 			  	<div class="list-group-item">
@@ -330,8 +343,8 @@
 			    </div>
 			    <div class="modal-body">
 			        <p>
-			        	Descripción.
-			        </p>
+						Descripción.
+					</p>
 			    </div>
 		      	<div class="modal-footer">
 		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Aceptar</button>
