@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Registro</title>
+	<title>Calificacion</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
@@ -118,8 +118,8 @@
 						</li>
 						<li>
 							<a href="release.html"><i class="zmdi zmdi-card zmdi-hc-fw"></i> Comunicados</a>
-						</li>
-						<li>
+                        </li>
+                        <li>
 							<a href="score.html"><i class="zmdi zmdi-font zmdi-hc-fw"></i> Calificaciones</a>
 						</li>
 					</ul>
@@ -157,7 +157,7 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles"><i class="zmdi zmdi-money-box zmdi-hc-fw"></i> Pagos <small>Registro</small></h1>
+			  <h1 class="text-titles"><i class="zmdi zmdi-face zmdi-hc-fw"></i> Escolar <small>Calificaciones</small></h1>
 			</div>
 			<p class="lead">Descripción.</p>
 		</div>
@@ -165,8 +165,8 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-					  	<li class="active"><a href="#new" data-toggle="tab">Nuevo</a></li>
-					  	<li><a href="#list" data-toggle="tab">Lista</a></li>
+					  	<li class="active"><a href="#new" data-toggle="tab">Ingreso</a></li>
+					  	<li><a href="#list" data-toggle="tab">List</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade active in" id="new">
@@ -174,38 +174,45 @@
 								<div class="row">
 									<div class="col-xs-12 col-md-10 col-md-offset-1">
 									    <form action="">
+                                            <fieldset>Calificacion Estudiante</fieldset>
+                                            <div class="form-group label-floating">
+												<label class="control-label">Curso</label>
+												<input list ="level" name="level" class="form-control" >
+												<datalist id="level">
+													<option value="Primero A">
+													<option value="Primero B">
+													<option value="Primero c">
+													<option value="Segundo A">
+												  </datalist>
+                                            </div>
 									    	<div class="form-group label-floating">
-											  <label class="control-label">Pago</label>
-											  <input class="form-control" type="text">
+												<label class="control-label">Estudiante</label>
+												<input list ="student" name="student" class="form-control" >
+												<datalist id="student">
+													<option value="Carlos Alfaro">
+													<option value="Alicia Melendez">
+													<option value="Sarai Mercado">
+													<option value="Omi Mondragon">
+												  </datalist>
 											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Cantidad</label>
-											  <input class="form-control" type="text">
-											</div>
-											<div class="form-group label-floating">
-											  <label class="control-label">Código de Estudiante</label>
-											  <textarea class="form-control"></textarea>
-											</div>
-											<div class="form-group">
-										        <label class="control-label">Curso</label>
-										        <select class="form-control">
-										          <option>1 curso</option>
-										          <option>2 curso</option>
-										          <option>3 curso</option>
-										          <option>4 curso</option>
-										          <option>5 curso</option>
-										        </select>
-										    </div>
-											<div class="form-group">
-										        <label class="control-label">Año</label>
-										        <select class="form-control">
-										          <option>2020</option>
-										          <option>2019</option>
-										          <option>2018</option>
-										          <option>2017</option>
-										          <option>2016</option>
-										        </select>
-										    </div>
+											
+                                            <div class="form-group label-floating">
+												<label class="control-label">Tipo Calificiacion</label>
+												<input list ="typeQ" name="typeQ" class="form-control" >
+												<datalist id="typeQ">
+													<option value="Deberes">
+													<option value="Talleres">
+													<option value="Pruebas">
+													<option value="Examenes">
+                                                    <option value="Examen Supletorio">
+                                                    <option value="Examen Remedial">
+                                                    <option value="Examene de Gracia">
+												  </datalist>
+                                            </div>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Calificacion</label>
+                                                <input class="form-control" type="number">
+                                              </div>
 										    <p class="text-center">
 										    	<button href="#!" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Guardar</button>
 										    </p>
@@ -215,17 +222,44 @@
 							</div>
 						</div>
 					  	<div class="tab-pane fade" id="list">
+                            <form action="">
+                                <fieldset>Calificaciones del curso...</fieldset>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">Curso</label>
+                                    <input list ="level" name="level" class="form-control" >
+                                    <datalist id="level">
+                                        <option value="Primero A">
+                                        <option value="Primero B">
+                                        <option value="Primero c">
+                                        <option value="Segundo A">
+                                      </datalist>
+                                </div>
+                                <p class="text-center">
+                                    <button href="" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> Abrir</button>
+                                </p>
+                            </form>
 							<div class="table-responsive">
 								<table class="table table-hover text-center">
 									<thead>
 										<tr>
 											<th class="text-center">#</th>
-											<th class="text-center">Pago</th>
-											<th class="text-center">Cantidad</th>
-											<th class="text-center">Pendiente</th>
 											<th class="text-center">Estudiante</th>
 											<th class="text-center">Curso</th>
-											<th class="text-center">Año</th>
+											<th class="text-center">Asignatura</th>
+											<th class="text-center">Nota Tareas Q1</th>
+											<th class="text-center">Nota Talleres Q1</th>
+											<th class="text-center">Nota Pruebas Q1</th>
+											<th class="text-center">Nota Examenes Q1</th>
+                                            <th class="text-center">Nota Q1</th>
+                                            <th class="text-center">Nota Tareas Q2</th>
+											<th class="text-center">Nota Talleres Q2</th>
+											<th class="text-center">Nota Pruebas Q2</th>
+											<th class="text-center">Nota Examenes Q2</th>
+                                            <th class="text-center">Nota Q2</th>
+                                            <th class="text-center">Nota Examenes Supletorio</th>
+                                            <th class="text-center">Nota Examenes Remedial</th>
+                                            <th class="text-center">Nota Examenes de Gracia</th>
+                                            <th class="text-center">Promedio Final</th>
 											<th class="text-center">Actualizar</th>
 											<th class="text-center">Borrar</th>
 										</tr>
@@ -233,45 +267,85 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>$70</td>
-											<td>$40</td>
-											<td>$30</td>
 											<td>Carlos Alfaro</td>
-											<td>Curso</td>
-											<td>2020</td>
+											<td>Primero B</td>
+											<td>8</td>
+											<td>9</td>
+											<td>7</td>
+											<td>8</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+                                            <td>7</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>7,5</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>2</td>
-											<td>$70</td>
-											<td>$70</td>
-											<td>$0</td>
-											<td>Claudia Rodriguez</td>
-											<td>Curso</td>
-											<td>2020</td>
+											<td>Alicia Melendez</td>
+											<td>Primero B</td>
+											<td>8</td>
+											<td>9</td>
+											<td>7</td>
+											<td>8</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+                                            <td>7</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>7,5</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>3</td>
-											<td>$70</td>
-											<td>$70</td>
-											<td>$0</td>
-											<td>Alicia Melendez</td>
-											<td>Curso</td>
-											<td>2020</td>
+											<td>Sarai Mercado</td>
+											<td>Primero B</td>
+											<td>8</td>
+											<td>9</td>
+											<td>7</td>
+											<td>8</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+                                            <td>7</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>7,5</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
 										<tr>
 											<td>4</td>
-											<td>$70</td>
-											<td>$70</td>
-											<td>$0</td>
-											<td>Alba Bonilla</td>
-											<td>Curso</td>
-											<td>2020</td>
+											<td>Omi Mondragon</td>
+											<td>Primero B</td>
+											<td>8</td>
+											<td>9</td>
+											<td>7</td>
+											<td>8</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+											<td>6</td>
+											<td>8</td>
+                                            <td>7</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>7,5</td>
 											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-refresh"></i></a></td>
 											<td><a href="#!" class="btn btn-danger btn-raised btn-xs"><i class="zmdi zmdi-delete"></i></a></td>
 										</tr>
@@ -360,7 +434,8 @@
 			    </div>
 			    <div class="modal-body">
 			        <p>
-						Descripción			        </p>
+						Descripción.
+				    </p>
 			    </div>
 		      	<div class="modal-footer">
 		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Aceptar</button>
