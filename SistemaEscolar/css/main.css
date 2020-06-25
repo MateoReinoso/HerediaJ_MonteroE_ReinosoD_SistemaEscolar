@@ -595,3 +595,12 @@ body, html{
 		padding-left: 0;
 	}
 }
+.boton{
+	border: none;
+	color: tomato;
+	background: -webkit-linear-gradient(top, #E1400A, #B83309);
+	background: -moz-linear-gradient(top, #E1400A, #B83309);
+	cursor: pointer;
+	
+
+}
